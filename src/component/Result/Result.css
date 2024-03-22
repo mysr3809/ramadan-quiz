@@ -1,0 +1,16 @@
+.correct-answer {
+  color: green;
+}
+
+.incorrect-answer {
+  color: red;
+}
+
+.home-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(26, 108, 7);
+  color: white;
+  margin-top: 10px;
+}

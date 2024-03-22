@@ -1,8 +1,17 @@
+.App {
+  height: 100%;
+  width: 100%;
+}
+
 .container {
   width: 90%;
+  height: 100%;
   margin: 0 auto;
   text-align: center;
   font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .start-btn {
@@ -11,5 +20,5 @@
   border: none;
   background-color: rgb(26, 108, 7);
   color: white;
-  margin-top: 20px;
+  margin-top: 10px;
 }

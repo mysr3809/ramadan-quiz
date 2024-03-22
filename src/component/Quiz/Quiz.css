@@ -1,0 +1,52 @@
+.quiz {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+.question-container {
+  margin-top: 20px;
+}
+
+.answer-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.answer {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.next-btn,
+.previous-btn,
+.finish-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(26, 108, 7);
+  color: white;
+  margin-top: 10px;
+}
+
+.previous-btn {
+  background-color: orange;
+}
+
+.finish-btn {
+  background-color: red;
+}
+
+.selected {
+  background-color: red; /* or any color you like */
+}
