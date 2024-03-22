@@ -1,0 +1,15 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: monospace;
+}
+
+.start-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(26, 108, 7);
+  color: white;
+  margin-top: 20px;
+}
