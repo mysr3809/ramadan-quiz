@@ -1,3 +1,9 @@
+.result-container {
+  height: 100%;
+  padding: 20px 0;
+  overflow: scroll;
+}
+
 .correct-answer {
   color: green;
 }
@@ -12,5 +18,26 @@
   border: none;
   background-color: rgb(26, 108, 7);
   color: white;
+  margin-top: 10px;
+}
+
+.result {
+  text-align: start;
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+}
+
+.result ul {
+}
+
+.result li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+.correct-img,
+.incorrect-img {
+  width: 70%;
   margin-top: 10px;
 }

@@ -1,18 +1,14 @@
-import React from "react";
 import PropTypes from "prop-types";
 import "./Result.css";
 import quizData from "../../questions"; // Update this path to where your quizData is located
 
 const Result = ({ goHomePage }) => {
-  // Assuming user's answers are stored in local storage with the key "userAnswers"
   const userAnswers = JSON.parse(localStorage.getItem("quizGivenAnswers"));
   let score = 0;
 
-  // Ensure userAnswers is not null and is an array
   if (Array.isArray(userAnswers)) {
     userAnswers.forEach((answerIndex, questionIndex) => {
       const question = quizData[questionIndex];
-      // Check if the answer index (converted to string to match correctAnswer's type) matches the correctAnswer
       if (
         question &&
         answerIndex !== null &&
@@ -26,21 +22,30 @@ const Result = ({ goHomePage }) => {
   const totalQuestions = quizData.length;
 
   return (
-    <div>
+    <div className="result-container">
       <h2>Your Result</h2>
-      <p>
+      <h3>
         You scored {score} out of {totalQuestions}.
-      </p>
+      </h3>
+      {score > 10 ? (
+        <img
+          className="correct-img"
+          src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2dlenR4bTZ0ODg3d3h0N2luOTk5NmRlajBubGltZjV6YzYycGF4YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6nuiJjOOQBBn2/giphy.gif"
+          alt=""
+        />
+      ) : (
+        <img
+          className="incorrect-img"
+          src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3hpYWtvZXlub3BidzViMGpmd2FsY240ZnJhMDA0YWprOGg5cDM2MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EXHHMS9caoxAA/giphy.gif"
+          alt=""
+        />
+      )}
       {quizData.map((item, questionIndex) => {
-        // const isCorrect =
-        //   item.correctAnswer ===
-        //   (userAnswers[questionIndex] !== undefined
-        //     ? userAnswers[questionIndex].toString()
-        //     : null);
-
         return (
-          <div key={item.id}>
-            <h3>{item.question}</h3>
+          <div className="result" key={item.id}>
+            <h3>
+              {questionIndex + 1}: {item.question}
+            </h3>
             <ul>
               {item.answers.map((answer, answerIndex) => {
                 let className = "";
@@ -62,7 +67,7 @@ const Result = ({ goHomePage }) => {
       })}
 
       <button className="home-btn" onClick={goHomePage}>
-        Home Page
+        Try Again
       </button>
     </div>
   );
