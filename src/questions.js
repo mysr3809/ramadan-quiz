@@ -19,7 +19,7 @@ const quizData = [
       "It is one of the 5 pillars of Islam",
       "Because everyone fasting during Ramadan",
     ],
-    correctAnswer: "3",
+    correctAnswer: "2",
   },
   {
     id: 3,
