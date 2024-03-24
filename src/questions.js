@@ -171,7 +171,7 @@ const quizData = [
     answers: [
       "Every chicken is halal",
       "Pork",
-      "%0 alcohol beer",
+      "Beer brands with %0 alcohol",
       "Fish",
       "None of the above",
     ],
