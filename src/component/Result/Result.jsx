@@ -30,7 +30,7 @@ const Result = ({ goHomePage }) => {
       {score > 10 ? (
         <img
           className="correct-img"
-          src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2dlenR4bTZ0ODg3d3h0N2luOTk5NmRlajBubGltZjV6YzYycGF4YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6nuiJjOOQBBn2/giphy.gif"
+          src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDhrNXZmNHl5dmNkNmhqb2RuaGgwZmJibmU1dzU2aGFtcTMwa2g2dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NEvPzZ8bd1V4Y/giphy.gif"
           alt=""
         />
       ) : (
