@@ -24,7 +24,7 @@ body::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("https://aksarayegemengazetesi.com/wp-content/uploads/2024/03/ramazan-kampanyasi.jpg")
+  background: url(./assets//img.webp)
     center/cover no-repeat;
   opacity: 0.5;
   z-index: -1;

@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
+import "./Header.css";
 
 const Header = ({ startQuiz }) => {
   return (
-    <div>
+    <div className="header-container">
       <h1 data-aos="fade-down">Welcome to Ramadan Quiz</h1>
       <br></br>
       <h3 data-aos="fade-up" data-aos-duration="1000">
